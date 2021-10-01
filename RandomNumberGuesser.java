@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class RandomNumberGuesser {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner (System.in);
+		final String programmerName = "Carl Christian Paul Hipolito";
 		RNG rng = new RNG();
 		String retry;
 		
@@ -40,5 +41,6 @@ public class RandomNumberGuesser {
 			}
 		} while ("Yes".equalsIgnoreCase(retry) || "yes".equalsIgnoreCase(retry));
 		System.out.println("Thanks for playing...");
+		System.out.println("Programmer: " + programmerName);
 	}	
 }
